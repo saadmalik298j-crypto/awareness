@@ -8,6 +8,16 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Google Site Verification
+st.markdown("""
+<script>
+    var meta = document.createElement('meta');
+    meta.name = "google-site-verification";
+    meta.content = "6ip2TLa4btNdf6cXB4mz7C8Urj3A2oE2DLhwd3kPj0k";
+    document.getElementsByTagName('head')[0].appendChild(meta);
+</script>
+""", unsafe_allow_html=True)
+
 # Custom CSS for modern look
 st.markdown("""
 <style>
@@ -116,6 +126,8 @@ with tip_col1:
     - **Prioritize High-Credit Courses:** Focus more on subjects with 4+ credits as they impact your CGPA the most.
     - **Attendance is Key:** Beyond the rule, being in class helps you understand the professor's expectations for exams.
     - **Smart Note-Taking:** Quality notes are better than long books for quick revisions.
+    - **Student Success Resources:** Explore this [student success directory](https://shadowfight2.site/useful-links) for curated productivity tools.
+    - **Skill Building:** Utilize [educational simulation tools](https://hungrysharkevolutionmod.com) to enhance your practical understanding of complex systems.
     """)
 
 with tip_col2:
