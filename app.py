@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 
 # Page configuration
 st.set_page_config(
@@ -35,7 +34,7 @@ st.markdown("""
         font-size: 0.9rem;
     }
 </style>
-""", unsafe_with_html=True)
+""", unsafe_allow_html=True)
 
 # 1. Hero Title and Short Intro
 st.markdown("""
@@ -43,7 +42,7 @@ st.markdown("""
         <h1 style='text-align: center;'>🎓 CGPA Awareness Dashboard</h1>
         <p style='text-align: center; font-size: 1.2rem;'>Empowering College Students to Navigate Academic Success</p>
     </div>
-""", unsafe_with_html=True)
+""", unsafe_allow_html=True)
 
 st.header("What is CGPA?")
 st.markdown("""
@@ -133,4 +132,4 @@ st.markdown("""
         <p><b>Academic Disclaimer:</b> This dashboard is for simulation purposes only. Official CGPA is determined by your University's Examination Cell based on specific credit calculations.</p>
         <p>© 2025 CGPA Awareness Initiative | Empowering Students Digitally</p>
     </div>
-""", unsafe_with_html=True)
+""", unsafe_allow_html=True)
