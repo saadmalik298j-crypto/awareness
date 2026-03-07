@@ -145,3 +145,53 @@ st.markdown("""
         <p>© 2025 CGPA Awareness Initiative | Empowering Students Digitally</p>
     </div>
 """, unsafe_allow_html=True)
+
+
+def gpa_calculators_timeline():
+    st.markdown(
+        """
+        <h2 style="text-align:center;color:#1f2937;margin-bottom:20px;">📈 Academic Progress: GPA Calculators</h2>
+        <p style="text-align:center;color:#4b5563;font-size:16px;line-height:1.6;margin-bottom:25px;">
+        Track your academic journey with our stepwise GPA calculators—from secondary school to university semesters.
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Timeline data
+    calculators = [
+        {"stage":"Secondary School","name":"SSC GPA Calculator bd","url":"https://cgpahub.com/tools/ssc-gpa-calculator","color":"#3b82f6"},
+        {"stage":"Higher Secondary","name":"HSC GPA Calculator online","url":"https://cgpahub.com/tools/hsc-gpa-calculator","color":"#dc2626"},
+        {"stage":"University Semester","name":"SGPA Calculator","url":"https://cgpahub.com/tools/sgpa-calculator","color":"#059669"},
+        {"stage":"University (Local)","name":"UOG GPA Calculator online","url":"https://cgpahub.com/tools/uog-gpa-calculator","color":"#f97316"},
+        {"stage":"University (International)","name":"UofT GPA Calculator free","url":"https://cgpahub.com/tools/uoft-gpa-calculator","color":"#be185d"},
+        {"stage":"US Universities","name":"Purdue GPA Calculator free","url":"https://cgpahub.com/tools/purdue-gpa-calculator","color":"#2563eb"},
+        {"stage":"US Universities","name":"GPA Calculator Asu ","url":"https://cgpahub.com/tools/asu-gpa-calculator","color":"#7c3aed"},
+        {"stage":"US Universities","name":"UF GPA Calculator","url":"https://cgpahub.com/tools/uf-gpa-calculator","color":"#b45309"},
+    ]
+
+    for idx, calc in enumerate(calculators):
+        st.markdown(
+            f"""
+            <div style="display:flex;align-items:flex-start;margin-bottom:20px;">
+                <div style="width:30px;flex-shrink:0;">
+                    <div style="width:15px;height:15px;border-radius:50%;background:{calc['color']};margin-top:5px;"></div>
+                    {'<div style="width:2px;height:60px;background:#cbd5e1;margin:0 auto;"></div>' if idx < len(calculators)-1 else ''}
+                </div>
+                <div style="margin-left:15px;background:#ffffff;padding:15px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.05);flex-grow:1;">
+                    <h4 style="color:{calc['color']};margin-bottom:5px;">{calc['name']}</h4>
+                    <p style="margin:0 0 5px 0;color:#374151;font-size:14px;"><strong>Stage:</strong> {calc['stage']}</p>
+                    <a href="{calc['url']}" target="_blank" style="text-decoration:none;font-weight:600;color:#2563eb;">{calc['name']</a>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    st.markdown(
+        "<p style='text-align:center;color:#6b7280;margin-top:10px;font-size:14px;'>Follow this timeline to calculate your GPA accurately at each stage of your academic journey.</p>",
+        unsafe_allow_html=True
+    )
+
+# Usage
+gpa_calculators_timeline()
