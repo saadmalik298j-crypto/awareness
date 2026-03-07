@@ -181,7 +181,7 @@ def gpa_calculators_timeline():
                 <div style="margin-left:15px;background:#ffffff;padding:15px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.05);flex-grow:1;">
                     <h4 style="color:{calc['color']};margin-bottom:5px;">{calc['name']}</h4>
                     <p style="margin:0 0 5px 0;color:#374151;font-size:14px;"><strong>Stage:</strong> {calc['stage']}</p>
-                    <a href="{calc['url']}" target="_blank" style="text-decoration:none;font-weight:600;color:#2563eb;">{calc['name']</a>
+                    <a href="{calc['url']}" target="_blank" style="text-decoration:none;font-weight:600;color:#2563eb;">{calc['name']}</a>
                 </div>
             </div>
             """,
